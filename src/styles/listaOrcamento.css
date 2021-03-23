@@ -1,0 +1,72 @@
+#listaOrcamento.active {
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex:1;
+    transform:translateX(0);
+}
+#listaOrcamento {
+    display:flex;
+    flex-direction: row;
+    justify-content: stretch;
+    
+}
+
+
+
+@media(max-width: 768px) {
+    #listaOrcamento {
+
+        width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        flex: none;
+        transform:translateX(-100%);        
+    }
+}
+
+
+/*
+
+}*/
+#listaOrcamento ul {width:100%}
+
+#listaOrcamento li {
+    display:flex;    
+    flex-direction: row;
+    justify-content: flex-start;
+    width:100%;
+    flex-wrap: wrap;    
+} 
+#listaOrcamento li.novoItem, li#actions-total-orcamento  {
+    justify-content: space-around;
+}
+#listaOrcamento li.novoItem button:not(.main-button) {
+    max-width:15rem;
+    min-width:5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    border:outset gray 3px;
+    flex:1;
+    margin: 0.25rem;
+    box-shadow: gray 0.2rem 0.2rem 0.4rem;
+    transition:box-shadow ease 0.2s;
+    border-radius:0.2rem
+}
+
+#listaOrcamento li.novoItem button:not(.main-button):hover, #listaOrcamento li.novoItem button:not(.main-button):active{
+    box-shadow: none;
+    border:inset gray 3px;
+}
+
+#listaOrcamento li.novoItem img {
+    width:100%;
+}
+
+#btn-finalizar {
+    background-color: var(--green);
+    border-color: var(--green);
+}

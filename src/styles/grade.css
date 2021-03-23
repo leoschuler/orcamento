@@ -1,0 +1,63 @@
+
+/* Chrome, Safari, Edge, Opera */
+.gradeField input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.gradeField  input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button-wrapper {
+    display:flex;
+    flex:3;
+    background-color: white;
+   /* border:inset 1px;
+    border-radius:5px;*/
+    
+}
+
+.button-wrapper button {
+    flex:1;    
+    background-color:lightgray;
+    border-style: outset;
+    border-width: 1px;
+    padding: 0.3rem 0.5rem;
+}
+
+
+.button-wrapper button:active {
+    border-style: inset;
+    outline:none;
+    
+}
+.button-wrapper button:focus {
+    outline-offset:-2px;
+    outline-color: gray;
+    outline-style: dotted;
+    outline-width: 1px;
+
+}
+
+.button-wrapper button:first-child {
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.button-wrapper button:last-child {
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+#EditPane .button-wrapper input {
+    flex:2;
+    margin:0px;
+    margin-left:0px;
+    border-style:inset ;
+    border-width: 1px 0px;
+    background-color: transparent;
+    text-align: center;
+    align-self: stretch;
+}
