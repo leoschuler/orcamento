@@ -26,7 +26,7 @@ export default function  FinalizaOrcamento() {
                 </li> 
                 <li className="itemOrcamento" id="actions-total-orcamento">
                     <button className="main-button" id="btn-editar" onClick={editarOrcamento}><FontAwesomeIcon icon={faFileInvoice} />Editar Orçamento</button>
-                    <button className="main-button" id="btn-finalizar"><FontAwesomeIcon icon={faPaperPlane} />Enviar Por Email</button>                    
+                    {false && (<button className="main-button" id="btn-finalizar"><FontAwesomeIcon icon={faPaperPlane} />Enviar Por Email</button>)}                    
                 </li> 
         </>
         )

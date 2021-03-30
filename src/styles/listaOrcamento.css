@@ -52,9 +52,31 @@
     border:outset gray 3px;
     flex:1;
     margin: 0.25rem;
-    box-shadow: gray 0.2rem 0.2rem 0.4rem;
-    transition:box-shadow ease 0.2s;
-    border-radius:0.2rem
+    /* box-shadow: gray 0.2rem 0.2rem 0.4rem; */
+    /*transition:box-shadow ease 0.2s;*/
+    border-radius:0.2rem;
+    position:relative;
+}
+
+#listaOrcamento li.novoItem button:not(.main-button)::before {
+	content: ' ';
+	display: block;
+	position: absolute !important;
+	top: 0px;
+	bottom: 0;
+	z-index: -11;
+	box-sizing: content-box;
+	left: 0;
+	right: 0;
+	box-shadow: black 0.2rem 0.2rem 0.4rem;	
+	transition: transform 0.2s linear;
+	border-radius: 0.2rem;	
+}
+
+#listaOrcamento li.novoItem button:not(.main-button):hover::before {
+    transform:scale(.99,.99);
+    transform-origin: top left;
+
 }
 
 #listaOrcamento li.novoItem button:not(.main-button):hover, #listaOrcamento li.novoItem button:not(.main-button):active{
